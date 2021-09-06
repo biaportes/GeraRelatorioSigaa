@@ -1,3 +1,10 @@
+#
+# diario.py : Uma solução para o problema de geração de relatório de acompanhamento de notas dos alunos
+# Github    : https://github.com/biaportes/GeraRelatorioSigaa
+# data      : 20/03/2021
+# autora    : Professora Bianca Portes de Castro,
+#            IFSEMG/DACC/Ciência da Computação
+
 import pandas as pd
 path = "ano1/"
 
