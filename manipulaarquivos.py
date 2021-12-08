@@ -2,7 +2,7 @@
 # manipulaarquivos.py : Responsável por abrir os arquivos do Sigaa, bem como gerar as saídas CSV e TXT
 # Github    : https://github.com/biaportes/GeraRelatorioSigaa
 # data      : 20/03/2021
-# autora    : Professora Bianca Portes de Castro,
+# autora    : Bianca Portes de Castro,
 #            IFSEMG/DACC/Ciência da Computação
 
 import pandas as pd

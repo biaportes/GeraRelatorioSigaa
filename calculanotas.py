@@ -2,16 +2,17 @@
 # calculanotas.py : Responsável por efetuar os cálculos com as notas dos alunos
 # Github    : https://github.com/biaportes/GeraRelatorioSigaa
 # data      : 20/03/2021
-# autora    : Professora Bianca Portes de Castro,
+# autora    : Bianca Portes de Castro,
 #            IFSEMG/DACC/Ciência da Computação
 
 import pandas as pd
 
-def maiorNota(dfs, disc):
-    todasNotasDisc=dfs[0].loc[1:,'NOME']
+def maiorNota(listaDeDadosDeCadaTrimestre, disc):
+    #No trimestre 1, acessa o grupo de valores da coluna NOME, mas indo da linha 1 até o fim.
+    todasNotasDisc=listaDeDadosDeCadaTrimestre[0].loc[1:,'NOME']
 
     cont = 1
-    for df in dfs:
+    for df in listaDeDadosDeCadaTrimestre:
         nota = df.loc[1:, disc ]
         recupera = df.loc[1: , disc+'.1']
         #nota[0] = 'N'+str(cont)
