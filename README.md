@@ -1,6 +1,6 @@
 # Programa para Gerar Relatório de notas do Sigaa
 
-O Sigaa faz parte do Sistema Integrado de Gestão (SIG) que foi desenvolvido pela Universidade Federal do Rio Grande do Norte (UFRN) em 2004. O mesmo foi adquirido e é usado por diversas instituições públicas vinculadas ao Governo Federal ao longo dos anos.
+O Sigaa faz parte do Sistema Integrado de Gestão (SIG) que foi desenvolvido pela Universidade Federal do Rio Grande do Norte (UFRN) em 2004. O mesmo é usado por diversas instituições públicas vinculadas ao Governo Federal.
 
 Na aquisição do sistema Sigaa, a implantação e adaptação do mesmo para cada especificidade institucional é feita em parceria com a empresa Sig Software (https://site.esig.com.br/).
 
