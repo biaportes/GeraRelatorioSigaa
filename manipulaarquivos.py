@@ -43,6 +43,20 @@ def geraSaida(df, texto):
     caminho = path + texto
     df.to_csv(caminho)
 
+def geraArquivoComNomeDisciplinas(ultimoTrimestre):
+    nomes = ultimoTrimestre.iloc[0].index
+    aux = sorted(set(nomes[4:]))
+    for i in range(1, len(aux)):
+        if (i%4 == 0):
+            continue
+        aux[i] = aux[i][:-2]
+
+    nomes = sorted(set(aux))
+    with open(path+"/nomes_disciplinas.txt", 'w') as file:
+        for n in nomes:
+            file.write(n + "\n")
+        file.close()
+
 
 '''
 def disciplinasss(df):
