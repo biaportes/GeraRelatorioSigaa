@@ -7,6 +7,21 @@
 
 import pandas as pd
 
+
+def media(trimestre, disc):
+    #nomesAlunos=trimestre.loc[1:,'NOME']
+    mediasDisc = trimestre.loc[1:, disc +'.3']
+    #mediasDisc = pd.concat([nomesAlunos,mediasDisc], axis=1)
+    #mediasDisc = mediasDisc.rename(columns={ disc +'.3': disc})
+    for i in range(1,mediasDisc.shape[0]+1):
+        if mediasDisc[i] == '-':
+            mediasDisc[i] = 0
+        else:
+            mediasDisc[i] = mediasDisc[i].replace('.',',')
+
+    return mediasDisc
+
+'''
 def maiorNota(listaDeDadosDeCadaTrimestre, disc):
     #No trimestre 1, acessa o grupo de valores da coluna NOME, mas indo da linha 1 até o fim.
     todasNotasDisc=listaDeDadosDeCadaTrimestre[0].loc[1:,'NOME']
@@ -54,3 +69,4 @@ def colunaTotal(df, disc):
     total = total.rename(columns={ "TOTAL": disc})
 
     return total[disc]
+'''
